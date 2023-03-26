@@ -1,0 +1,23 @@
+$gray-200: #EFEFEF;
+$gray-300: #7A7A7A;
+$gray-700: #26262C;
+$gray-800: #1E1E26;
+$gray-900: #19181F;
+$blue: #1E71EE;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: $gray-700;
+}
+
+input, span, p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: $gray-700;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="container">
+        <div class="weather">
+            <form>
+                <div class="serachLocation">
+                    <button class="buttonSearch">
+                        <i class="ph-bold ph-magnifying-glass"></i>                    
+                    </button>
+                    <input type="text" placeholder="Search your weather" class="inputCity">
+                </div>
+            </form>
+
+            <div class="searchData">
+                <div class="aboutLocation">
+                    <h3 class="city">City</h3>
+                    <p class="country">Country</p>
+                </div>
+
+                <div class="viewTemp">
+                    <img id="imgTemp" src='./assets/sun.svg' alt="imagem do clima insolarado">
+
+                    <div class="tempContainer">
+                        <div class="tempNumber">
+                            <h1 class="temp">24°</h1>
+                            <span>C</span>
+                        </div>
+
+                        <div class="tempDay">
+                            <p><strong class="actualDay">Day,</strong> <span class="time">12:30</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moreInformation">
+                    <div class="dropContainer">
+                        <i class="ph-bold ph-drop"></i>
+                        <span class="drop"></span>
+                    </div>
+
+                    <div class="windContainer">
+                        <i class="ph-bold ph-wind"></i>
+                         <span class="wind"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

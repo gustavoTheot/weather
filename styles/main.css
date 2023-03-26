@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #26262C;
+}
+
+input, span, p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #26262C;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weather {
+  background-color: #EFEFEF;
+  height: 44rem;
+  padding: 2.3rem;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weather form .serachLocation {
+  background-color: white;
+  padding: 1.125rem;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weather form .serachLocation button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.weather form .serachLocation button i {
+  color: #7A7A7A;
+  font-size: 1.2rem;
+}
+
+.weather form .serachLocation input {
+  padding-left: 0.5rem;
+  border: 0;
+  outline: none;
+  width: 21rem;
+}
+
+.weather form .serachLocation input::-webkit-input-placeholder {
+  color: #7A7A7A;
+}
+
+.weather form .serachLocation input:-ms-input-placeholder {
+  color: #7A7A7A;
+}
+
+.weather form .serachLocation input::-ms-input-placeholder {
+  color: #7A7A7A;
+}
+
+.weather form .serachLocation input::placeholder {
+  color: #7A7A7A;
+}
+
+.searchData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.62rem;
+  margin-top: 3.75rem;
+}
+
+.searchData .aboutLocation {
+  text-align: center;
+}
+
+.searchData .aboutLocation h3 {
+  font-size: 1.6rem;
+}
+
+.searchData .aboutLocation p {
+  margin-top: 0.313rem;
+  font-size: 1;
+}
+
+.viewTemp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.viewTemp .tempContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.37rem;
+}
+
+.viewTemp .tempContainer .tempNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.viewTemp .tempContainer .tempNumber h1 {
+  font-size: 6rem;
+}
+
+.viewTemp .tempContainer .tempNumber span {
+  margin-top: 2rem;
+  font-size: 2.4rem;
+}
+
+.viewTemp .tempContainer .tempDay p strong {
+  font-size: 1.4rem;
+}
+
+.viewTemp .tempContainer .tempDay p span {
+  color: #7A7A7A;
+}
+
+.moreInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.moreInformation .dropContainer i {
+  color: #1E71EE;
+}
+
+.moreInformation .dropContainer::after {
+  content: '';
+  height: 1rem;
+  margin-left: 1rem;
+  border: 1px solid #7A7A7A;
+}
+
+.moreInformation .windContainer i {
+  color: #7A7A7A;
+}
+
+@media (max-width: 576px) {
+  .weather form .serachLocation input {
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+    width: 10rem;
+    font-size: 0.875rem;
+  }
+  .weather .tempContainer .tempNumber h1 {
+    font-size: 4rem;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+}
+
+body.onDarkMode {
+  background-color: #19181F;
+}
+
+body.onDarkMode span, body.onDarkMode p, body.onDarkMode h1, body.onDarkMode h3 {
+  color: #EFEFEF;
+}
+
+body.onDarkMode .weather {
+  background-color: #26262C;
+}
+
+body.onDarkMode .weather form .serachLocation {
+  background-color: #19181F;
+}
+
+body.onDarkMode .weather form .serachLocation input {
+  color: #EFEFEF;
+  background-color: #19181F;
+}
+/*# sourceMappingURL=main.css.map */

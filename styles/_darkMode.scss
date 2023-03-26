@@ -1,0 +1,21 @@
+body.onDarkMode{
+    background-color: $gray-900;
+
+    span, p, h1,h3{
+        color: $gray-200;
+    }
+
+    .weather{
+        background-color: $gray-700;
+        form{
+            .serachLocation{
+                background-color: $gray-900;
+
+                input{
+                    color: $gray-200;
+                    background-color: $gray-900;
+                }
+            }
+        }
+    }
+}

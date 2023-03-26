@@ -1,0 +1,137 @@
+.container{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather{
+    background-color: $gray-200;
+    height: 44rem;
+    padding: 2.3rem;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    form{
+        .serachLocation{
+            background-color: white;
+            padding: 1.125rem;
+            border-radius: 8px;
+
+            display: flex;
+            align-items: center;
+
+            button{
+                background-color: transparent;
+                border: 0;
+
+                cursor: pointer;
+                i{ 
+                    color: $gray-300;
+                    font-size: 1.2rem;
+                }
+            }
+            
+            input{
+                padding-left: 0.5rem;
+                border: 0;
+                outline: none;
+                width: 21rem;
+
+                &::placeholder{
+                    color: $gray-300;
+                }
+            }
+        }
+    }
+}
+
+.searchData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.62rem;
+
+    margin-top: 3.75rem;
+
+    .aboutLocation{
+        text-align: center;
+
+        h3{
+            font-size: 1.6rem;
+        }
+
+        p{
+            margin-top: 0.313rem;
+            font-size: 1;
+        }
+    }
+}
+
+.viewTemp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .tempContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.37rem;
+
+        .tempNumber{
+            display: flex;
+
+            h1{
+                font-size: 6rem;
+            }
+            span{
+                margin-top: 2rem;
+                font-size: 2.4rem;
+            }
+        }
+
+        .tempDay{
+            p{
+                strong{
+                    font-size: 1.4rem;
+                }
+
+                span{
+                    color: $gray-300;
+                }
+            }
+        }
+    }
+}
+
+.moreInformation{
+    display: flex;
+    gap: 1rem;
+
+    .dropContainer{
+        i{
+            color: $blue;
+        }
+        &::after{
+            content: '';
+            height: 1rem;
+            margin-left: 1rem;
+            border: 1px solid $gray-300;
+        }
+    }
+
+    .windContainer{
+        i{
+            color: $gray-300;
+        }
+    }
+
+    
+}

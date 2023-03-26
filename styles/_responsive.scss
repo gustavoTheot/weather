@@ -1,0 +1,23 @@
+@media(max-width: 576px){
+    .weather{
+        form{
+            .serachLocation{
+                input{
+                    transition-duration: 1s;
+                    width: 10rem;
+                    font-size: 0.875rem;
+                }
+            }
+            
+        }
+
+        .tempContainer{
+            .tempNumber{
+                h1{
+                    font-size: 4rem;
+                    transition-duration: 1s;
+                }
+            }
+        }
+    }
+}
