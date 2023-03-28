@@ -55,7 +55,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.62rem;
+    gap: 2rem;
 
     margin-top: 3.75rem;
 
@@ -78,12 +78,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
     .tempContainer{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 1.37rem;
+        gap: 1rem;
 
         .tempNumber{
             display: flex;

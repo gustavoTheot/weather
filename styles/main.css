@@ -106,7 +106,7 @@ input, span, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1.62rem;
+  gap: 2rem;
   margin-top: 3.75rem;
 }
 
@@ -153,7 +153,7 @@ input, span, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1.37rem;
+  gap: 1rem;
 }
 
 .viewTemp .tempContainer .tempNumber {
